@@ -1,29 +1,67 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <div className="max-w-sm mx-auto flex p-6 bg-white rounded-lg shadow-xl">
-      <div className="ml-6 pt-1">
-        <h4 className="text-xl text-gray-900 leading-tight">ChitChat</h4>
-        <p className="text-base text-gray-600 leading-normal">
-          You have a new message!
-        </p>
-      </div>
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+const IndexPage = ({ data, location }) => {
+
+  const siteTitle = data.site.siteMetadata.title
+  const posts = data.allMarkdownRemark.edges
+
+  return (
+    <Layout location={location}>
+      <SEO title={siteTitle} />
+
+
+      {posts.map(({ node }) => {
+        const title = node.frontmatter.title || node.fields.slug
+        return (
+          <article key={node.fields.slug}>
+            <header>
+              <h3 >
+                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  {title}
+                </Link>
+              </h3>
+              <small>{node.frontmatter.date}</small>
+            </header>
+            <section>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: node.frontmatter.description || node.excerpt,
+                }}
+              />
+            </section>
+          </article>
+        )
+      })}
+    </Layout>
+  )
+}
 
 export default IndexPage
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "YYYY-MM-DD")
+            title
+            description
+          }
+        }
+      }
+    }
+  }
+`
