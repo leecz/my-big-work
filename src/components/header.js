@@ -4,21 +4,15 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+    className=""
   >
     <div>
       <Link
         to="/"
-        style={{
-          color: `white`,
-          textDecoration: `none`,
-        }}
       >
         {siteTitle}
       </Link>
+      <Link to="archive">归档</Link>
       <Link to="/lab">实验</Link>
       <Link to="/about">关于</Link>
     </div>

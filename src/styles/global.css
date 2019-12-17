@@ -3,3 +3,11 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@import "./layout.css";
+
+body {
+  font-family: 300 1em/1.8 -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
+  letter-spacing: .03em;
+  background: #f4f4f4;
+}
