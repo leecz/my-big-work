@@ -17,20 +17,16 @@ const IndexPage = ({ data, location }) => {
         groups.map(group => {
           return (
             <div>
-              <div>{group.fieldValue}</div>
+              <div className="text-2xl mt-3">{group.fieldValue}</div>
               <div>
                 {group.edges.map(({ node }) => {
                   const title = node.frontmatter.title || node.fields.slug
                   return (
-                    <article key={node.fields.slug}>
-                      <header>
-                        <h3 >
-                          <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                            {title}
-                          </Link>
-                        </h3>
-                        <small>{node.frontmatter.date}</small>
-                      </header>
+                    <article className="flex ml-3 mt-1" key={node.fields.slug}>
+                      <div className="text-gray-700 text-sm font-light">{node.frontmatter.date}</div>
+                      <Link className="ml-6 text-orange-700 hover:text-orange-600" to={node.fields.slug}>
+                        {title}
+                      </Link>
                     </article>
                   )
                 })}

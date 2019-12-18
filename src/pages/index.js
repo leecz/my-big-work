@@ -18,15 +18,13 @@ const IndexPage = ({ data, location }) => {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <article key={node.fields.slug} className="pt-6 pb-5 border-gray-300 border-b">
+            <article key={node.fields.slug} className="pt-10 pb-8 border-gray-300 border-b">
               <div class="text-gray-600 text-1xl font-light" >{node.frontmatter.date}</div>
-              <header>
-                <h3 className="text-3xl mb-3 mt-1 ">
-                  <Link to={node.fields.slug}>
-                    {title}
-                  </Link>
-                </h3>
-              </header>
+              <h3 className="text-3xl mb-3 mt-1 ">
+                <Link to={node.fields.slug}>
+                  {title}
+                </Link>
+              </h3>
               <section>
                 <p
                   dangerouslySetInnerHTML={{
