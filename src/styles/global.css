@@ -1,13 +1,22 @@
+@import "./layout.css";
+
 @tailwind base;
 
 @tailwind components;
 
 @tailwind utilities;
 
-@import "./layout.css";
-
 body {
-  font-family: 300 1em/1.8 -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
-  letter-spacing: .03em;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC",
+    "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
   background: #f4f4f4;
+}
+
+.language-text {
+  color: #555555 !important;
+  background-color: #edf2f7 !important;
 }
