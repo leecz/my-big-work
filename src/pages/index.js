@@ -12,30 +12,32 @@ const IndexPage = ({ data, location }) => {
   return (
     <Layout location={location}>
       <SEO title={siteTitle} />
+      <div className=" p-6">
 
 
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
-        return (
-          <article key={node.fields.slug}>
-            <header>
-              <h3 >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
-        )
-      })}
+        {posts.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return (
+            <article key={node.fields.slug} className="pt-6 pb-5 border-gray-300 border-b">
+              <div class="text-gray-600 text-1xl font-light" >{node.frontmatter.date}</div>
+              <header>
+                <h3 className="text-3xl mb-3 mt-1 ">
+                  <Link to={node.fields.slug}>
+                    {title}
+                  </Link>
+                </h3>
+              </header>
+              <section>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: node.frontmatter.description || node.excerpt,
+                  }}
+                />
+              </section>
+            </article>
+          )
+        })}
+      </div>
     </Layout>
   )
 }

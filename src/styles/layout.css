@@ -354,14 +354,6 @@ hr {
 #write form,
 #write hr,
 #write figure,
-#write-p,
-#write-pre,
-#write-ul,
-#write-ol,
-#write-dl,
-#write-form,
-#write-hr,
-#write-table,
 blockquote {
   margin-bottom: 1.2em;
 }
@@ -372,13 +364,7 @@ blockquote {
 #write h3,
 #write h4,
 #write h5,
-#write h6,
-#write-h1,
-#write-h2,
-#write-h3,
-#write-h4,
-#write-h5,
-#write-h6 {
+#write h6 {
   margin-top: 1.2em;
   margin-bottom: 0.6em;
   line-height: 1.35;
@@ -481,98 +467,19 @@ li > p {
 
 /* Responsive images */
 #write img {
-  max-width: 100%;
+  max-width: 96%;
 }
 
-a.md-toc-inner {
-  border-bottom: 0 !important;
-}
-
-.md-toc-h1:first-of-type:last-of-type {
-  display: none;
-}
-
-.md-toc {
-  font-size: inherit;
-}
-
-.md-toc-h1 .md-toc-inner {
-  font-weight: normal;
-}
-
-.md-table-edit th {
-  padding: 0 !important;
-  border: 0 !important;
-}
-
-.mac-seamless-mode #write {
-  min-height: calc(100vh - 6em - 20px);
-}
-
-.typora-quick-open-item.active {
-  color: var(--active-file-text-color);
-}
-
-*.in-text-selection,
-::selection {
+*::selection {
   background: var(--active-file-bg-color);
   text-shadow: none;
   color: white;
 }
 
-.btn-primary {
-  background-color: #2d2d2d;
-  border-color: #020202;
-}
 
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary.focus,
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-  background-color: #4e4c4e;
-  border: #4e4c4e;
-}
-
-#preference-dialog .modal-content {
-  background: #6e757a;
-  --bg-color: #6e757a;
-  --text-color: #f1f1f1;
-  color: #f1f1f1;
-}
-
-#typora-source,
-.typora-sourceview-on {
-  --bg-color: #eee;
-  background: #eee;
-}
-
-.cm-s-typora-default .cm-header,
-.cm-s-typora-default .cm-property {
-  color: #116098;
-}
-
-.cm-s-typora-default .cm-link {
-  color: #11987d;
-}
-
-.cm-s-typora-default .cm-em {
-  font-family: Georgia-Italic, STSongti-SC-Light, serif;
-  color: #6f6400;
-}
-
-.cm-s-typora-default .cm-em {
-  color: rgb(0, 22, 45);
-}
 
 ::-webkit-scrollbar-corner {
   display: none;
   background: transparent;
 }
 
-/* Responsive images */
-img {
-  /* max-width: 100%; //By Jerry 2018-5-19 修改 */
-  max-width: 96%;
-}
