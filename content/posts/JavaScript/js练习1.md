@@ -1,10 +1,8 @@
 ---
 title: JavaScript 练习
 date: 2019-06-26 11:11:11
-tags: JavaScript
+tags: ["JavaScript"]
 ---
-
-# 一些进阶问题
 
 ## new 的实现原理
 

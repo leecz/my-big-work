@@ -1,8 +1,7 @@
 ---
 title: "elixir organizing a project"
 date: 2018-01-18 22:56:26 +0800 
-categories: elixir
-tag: elixir
+tags: ["elixir"]
 ---
 
 ## Organizing a Project

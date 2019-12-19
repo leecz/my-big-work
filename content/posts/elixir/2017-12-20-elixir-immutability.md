@@ -1,8 +1,7 @@
 ---
 title: "elixir immutability and data type"
 date: 2017-12-20 22:56:26 +0800 
-categories: elixir
-tag: elixir
+tags: ["elixir"]
 ---
 
 ## Immutability

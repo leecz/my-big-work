@@ -1,8 +1,7 @@
 ---
 title: "elixir strings and binaries"
 date: 2018-01-16 22:56:26 +0800 
-categories: elixir
-tag: elixir
+tags: ["elixir"]
 ---
 
 ## Strings and Binaries

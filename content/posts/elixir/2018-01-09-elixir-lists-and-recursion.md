@@ -1,8 +1,7 @@
 ---
 title: "elixir lists and recursion"
 date: 2018-01-09 22:56:26 +0800 
-categories: elixir
-tag: elixir
+tags: ["elixir"]
 ---
 
 ## Lists and Recursion

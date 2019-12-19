@@ -20,9 +20,18 @@ const BlogPostTemplate = ({ data, location, pageContext }) => {
           <h1>
             {post.frontmatter.title}
           </h1>
-          <p>
-            {post.frontmatter.date}
-          </p>
+          <div className="flex text-sm">
+            <p>
+              {post.frontmatter.date}
+            </p>
+            <div className="ml-6 text-xs">
+              {post.frontmatter.tags.map(tag => {
+                return (
+                  <Link to={`/tags/${tag}`} className="mr-2">{tag}</Link>
+                )
+              })}
+            </div>
+          </div>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
@@ -65,7 +74,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        description
+        tags
       }
     }
   }

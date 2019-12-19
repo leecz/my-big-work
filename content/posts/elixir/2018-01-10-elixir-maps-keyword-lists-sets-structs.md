@@ -1,8 +1,7 @@
 ---
 title: "elixir maps keyword lists sets and structs"
 date: 2018-01-10 22:56:26 +0800 
-categories: elixir
-tag: elixir
+tags: ["elixir"]
 ---
 
 

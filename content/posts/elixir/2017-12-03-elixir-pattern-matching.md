@@ -1,7 +1,7 @@
 ---
 title: Pattern Matching 
 date: 2018-12-24 23:54:57
-tags: elixir
+tags: ["elixir"]
 ---
 
 ## Pattern Matching

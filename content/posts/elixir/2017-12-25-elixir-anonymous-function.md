@@ -1,8 +1,7 @@
 ---
 title: "elixir functions"
 date: 2017-12-25 22:56:26 +0800 
-categories: elixir
-tag: elixir
+tags: ["elixir"]
 ---
 
 

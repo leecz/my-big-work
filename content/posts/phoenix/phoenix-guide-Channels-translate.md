@@ -1,10 +1,7 @@
 ---
 title: Phoenix Guide Channels 翻译
 date: 2018-12-25 23:14:57
-tags:
-- elixir
-- phoenix
-- channels
+tags: ["elixir", "Phoenix"]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "elixir modules and named functions"
 date: 2018-01-04 22:56:26 +0800 
-tag: elixir
+tags: ["elixir"]
 ---
 
 

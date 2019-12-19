@@ -1,8 +1,7 @@
 ---
 title: "elixir control flow"
 date: 2018-01-17 22:56:26 +0800 
-categories: elixir
-tag: elixir
+tags: ["elixir"]
 ---
 
 ## Control Flow

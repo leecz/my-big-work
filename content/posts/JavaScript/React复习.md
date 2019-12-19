@@ -1,12 +1,9 @@
 ---
 title: React 复习
 date: 2019-07-02 11:11:11
-tags:
-  - JavaScript
-  - React
+tags: ["JavaScript", "React"]
 ---
 
-# React 读书笔记
 
 背景，正在学习 《Manning.React.Native.in.Action.2019.3》
 

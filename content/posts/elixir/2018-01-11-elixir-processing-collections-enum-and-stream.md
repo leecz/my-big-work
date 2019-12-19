@@ -1,8 +1,7 @@
 ---
 title: "elixir processing collections -- enum and stream"
 date: 2018-01-11 22:56:26 +0800 
-categories: elixir
-tag: elixir
+tags: ["elixir"]
 ---
 
 ## Processing Collections -- Enum and Stream

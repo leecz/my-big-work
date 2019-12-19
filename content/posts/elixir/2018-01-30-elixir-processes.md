@@ -1,8 +1,7 @@
 ---
 title: "elixir 中的进程"
 date: 2018-01-30 22:56:26 +0800 
-categories: elixir
-tag: elixir
+tags: ["elixir"]
 ---
 
 翻译自 官方文档，参考自 [elixir guide 中文]( https://github.com/elixir-lang-china/elixir_guide_cn/blob/master/getting_started/Chapter11.md)

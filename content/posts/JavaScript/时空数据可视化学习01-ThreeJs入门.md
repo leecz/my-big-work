@@ -1,12 +1,8 @@
 ---
 title: 时空数据可视化学习01-ThreeJs入门
 date: 2019-07-01 11:11:11
-tags:
-  - JavaScript
-  - ThreeJs
+tags: ["JavaScript", "ThreeJS"]
 ---
-
-# Three Js 入门学习
 
 参考教程： [从零开始学习时空数据可视化(一)](https://zhuanlan.zhihu.com/p/61350952)
 

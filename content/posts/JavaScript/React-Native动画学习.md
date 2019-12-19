@@ -1,9 +1,7 @@
 ---
 title: React Native 动画学习
 date: 2019-08-06 11:11:11
-tags:
-  - JavaScript
-  - React Native
+tags: ["JavaScript"]
 ---
 
 

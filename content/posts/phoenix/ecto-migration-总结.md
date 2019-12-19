@@ -1,7 +1,7 @@
 ---
 title: Ecto Migration 用法总结
 date: 2019-06-27 11:11:11
-tags: Phoenix
+tags: ["Phoenix"]
 ---
 
 ## 常用命令

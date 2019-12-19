@@ -1,14 +1,10 @@
 ---
 title: Phoenix Guide Contexts Translate
 date: 2018-12-27 22:14:23
-tags:
-- elixir
-- phoenix
-- contexts
+tags: ["elixir", "Phoenix"]
 ---
 
 
-# Contexts
 
 到目前为止，我们已经构建了页面，通过我们的路由器连接 Controller 和 Actions ，并了解了 Ecto 如何验证和存储数据。 现在是时候将这些东西整合起来，使用 Elixir 来编写 Web 的一些功能。
 

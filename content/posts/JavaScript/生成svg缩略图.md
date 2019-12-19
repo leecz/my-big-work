@@ -1,10 +1,8 @@
 ---
 title: JavaScript 生成SVG缩略图
 date: 2019-06-27 11:11:11
-tags: JavaScript
+tags: ["JavaScript"]
 ---
-
-# SVG 缩略图
 
 这个 svg 是 D3js 动态生成的力导图，需要在列表页中快速展示，图表一多，直接展示的话，电脑吃不消，所以就想将其变成 base64 编码的静态图片，不考虑交互，因为是在列表页。
 

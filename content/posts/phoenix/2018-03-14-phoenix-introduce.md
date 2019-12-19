@@ -1,7 +1,7 @@
 ---
 title: pheonix 体系中的一些概念了解
 date: 2018-12-24 23:54:57
-tags:
+tags: ["Phoenix"]
 ---
 
 ## Routing
