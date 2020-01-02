@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const TagsPage = ({ pageContext, data, location }) => {
-
   const { tag } = pageContext
   const siteTitle = data.site.siteMetadata.title
   const { edges, totalCount } = data.allMarkdownRemark
@@ -18,21 +17,23 @@ const TagsPage = ({ pageContext, data, location }) => {
           <div className="">{tag}</div>
           <div className="ml-4">共 {totalCount} 篇</div>
         </div>
-        {
-          edges.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
-            return (
-              <article className="flex ml-3 mt-1" key={node.fields.slug}>
-                <div className="text-gray-700 text-sm font-light">{node.frontmatter.date}</div>
-                <Link className="ml-6 text-orange-700 hover:text-orange-600" to={node.fields.slug}>
-                  {title}
-                </Link>
-              </article>
-            )
-          })
-        }
+        {edges.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return (
+            <article className="flex ml-3 mt-1" key={node.fields.slug}>
+              <div className="text-gray-700 text-sm font-light">
+                {node.frontmatter.date}
+              </div>
+              <Link
+                className="ml-6 text-orange-700 hover:text-orange-600"
+                to={node.fields.slug}
+              >
+                {title}
+              </Link>
+            </article>
+          )
+        })}
       </div>
-
     </Layout>
   )
 }
@@ -47,21 +48,21 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       limit: 2000
-      sort: {fields: frontmatter___date, order: DESC}
-      filter: { frontmatter: { tags: { in : [$tag] } } }
+      sort: { fields: frontmatter___date, order: DESC }
+      filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
-        totalCount
-        edges {
-          node {
-            frontmatter {
-              date(formatString: "YYYY-MM-DD")
-              title
-            }
-            fields {
-              slug
-            }
+      totalCount
+      edges {
+        node {
+          frontmatter {
+            date(formatString: "YYYY-MM-DD")
+            title
+          }
+          fields {
+            slug
           }
         }
+      }
     }
   }
 `

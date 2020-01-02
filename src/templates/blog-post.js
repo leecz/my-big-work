@@ -15,19 +15,17 @@ const BlogPostTemplate = ({ data, location, pageContext }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article id="write" >
+      <article id="write">
         <header>
-          <h1>
-            {post.frontmatter.title}
-          </h1>
+          <h1>{post.frontmatter.title}</h1>
           <div className="flex text-sm">
-            <p>
-              {post.frontmatter.date}
-            </p>
+            <p>{post.frontmatter.date}</p>
             <div className="ml-6 text-xs">
               {post.frontmatter.tags.map(tag => {
                 return (
-                  <Link to={`/tags/${tag}`} className="mr-2">{tag}</Link>
+                  <Link to={`/tags/${tag}`} className="mr-2" key={tag}>
+                    {tag}
+                  </Link>
                 )
               })}
             </div>
@@ -36,23 +34,21 @@ const BlogPostTemplate = ({ data, location, pageContext }) => {
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
 
-      <nav>
-        <ul>
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-                </Link>
-            )}
-          </li>
-        </ul>
+      <nav className="flex justify-between mb-4">
+        <div>
+          {previous && (
+            <Link to={previous.fields.slug} rel="prev">
+              ← {previous.frontmatter.title}
+            </Link>
+          )}
+        </div>
+        <div>
+          {next && (
+            <Link to={next.fields.slug} rel="next">
+              {next.frontmatter.title} →
+            </Link>
+          )}
+        </div>
       </nav>
     </Layout>
   )

@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
       <Link to="/" className="mr-8">
         {siteTitle}
       </Link>
-      <Link to="archive" className="mr-8">
+      <Link to="/archive" className="mr-8">
         归档
       </Link>
       <Link to="/lab" className="mr-8">

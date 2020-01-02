@@ -74,10 +74,13 @@ tags: ["生活"]
 以上
 
 第三
-![DIKW模型](https://en.wikipedia.org/wiki/DIKW_pyramid#/media/File:DIKW_Pyramid.svg)
+
+![dikw](./2019-summary-dikw.png)
 
 Data -> Infomation -> Knowledge -> Wisdom
 这将是我以后学习的指导准则
+
+以上
 
 ### 关于工作
 
@@ -96,6 +99,8 @@ Data -> Infomation -> Knowledge -> Wisdom
 还是很期待能在实际项目中大量实践起来。
 
 自学了一些 THREE.js 的知识，做过一些小练习，还不是很熟练，对 Web3D 这块，希望2020年能有所突破。
+
+12月，使用 Gatsby.js 开发了一个博客，希望能长久的维护下去，如果有UI的帮助，事情就会变得简单很多。
 
 这可能就是今年再工作方面一些进步的方面，Elixir，Phoenix，Vue，React Native，React Hooks。
 
