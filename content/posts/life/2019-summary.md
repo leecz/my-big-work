@@ -123,9 +123,16 @@ Data -> Infomation -> Knowledge -> Wisdom
 - 看书，技术书：JS，CSS的书，微信读书希望达到60个小时。
 - 软考高级。
 - 写博客，写一系列关于 Elixir 的教程，然后研究 OTP。
-- 做题，刷刷 LeetCode。
-- 用 THREE.js 做一些关于 GIS 的应用。
+- 技术学习
 - 运动
+
+技术学习重点：
+
+- 算法，刷题，刷刷 LeetCode。
+- TypeScript
+- Web3D,GIS,THREE.js做一些应用。
+- Flutter
+- Elixir,Phoenix
 
 就这些，开心就好!
 
